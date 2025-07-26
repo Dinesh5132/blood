@@ -17,16 +17,18 @@ export default function Header() {
       </div>
       <div className="bg-[#F9FAFB] flex items-center justify-between px-4 md:px-10 py-3 relative h-auto md:h-[70px]">
         <div className="flex items-center gap-4 w-[40px] h-[40px] lg:w-[95px] lg:h-[95px]">
-          <img
+          <a href="/">
+            <img
             src="images/logo.png"
             alt="Logo"
             className="w-full h-full"
           />
+          </a>
         </div>
         <nav className="hidden md:flex items-center gap-28 font-Outfit text-[15px] text-black">
-          <a href="#" className="hover:text-red-600">Who We Are</a>
-          <a href="#" className="hover:text-red-600">How We Help</a>
-          <a href="#" className="hover:text-red-600">Contact</a>
+          <a href="/whoweare" className="hover:text-red-600">Who We Are</a>
+          <a href="/howwehelp" className="hover:text-red-600">How We Help</a>
+          <a href="/contact" className="hover:text-red-600">Contact</a>
         </nav>
         <div className="hidden md:flex gap-20">
           {["Donor", "Request Blood", "Blood bank", "Volunteer"].map((text, index) => (

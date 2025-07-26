@@ -1,7 +1,7 @@
 import NBBMisstion from "@/utils/NBBMisstion";
 import NBBResponsibilities from "@/utils/NBBResponsibilities";
-import FirstSection from "@/whoweare/FirstSection";
-import LastSection from "@/whoweare/LastSection";
+import FirstSection from "@/components/whoweare/FirstSection";
+import LastSection from "@/components/whoweare/LastSection";
 import React from "react";
 
 export default function page() {

@@ -55,19 +55,51 @@ export default function Footer() {
           <div>
             <h4 className="font-Urbanist font-bold text-red-600 mb-2">HOME</h4>
             <ul className="space-y-1 text-sm font-Outfit">
-              <li><a href="#" className="hover:text-[#EB1202]">Who We Are</a></li>
-              <li><a href="#" className="hover:text-[#EB1202]">How we help</a></li>
-              <li><a href="#" className="hover:text-[#EB1202]">Contact</a></li>
+              <li>
+                <a href="#" className="hover:text-[#EB1202]">
+                  Who We Are
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#EB1202]">
+                  How we help
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#EB1202]">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <h4 className="font-Urbanist font-bold text-red-600 mb-2">HELP</h4>
             <ul className="space-y-1 text-sm font-Outfit">
-              <li><a href="#" className="hover:text-[#EB1202]">Contact Us</a></li>
-              <li><a href="#" className="hover:text-[#EB1202]">Donor</a></li>
-              <li><a href="#" className="hover:text-[#EB1202]">Request Blood</a></li>
-              <li><a href="#" className="hover:text-[#EB1202]">Blood Bank</a></li>
-              <li><a href="#" className="hover:text-[#EB1202]">Volunteer</a></li>
+              <li>
+                <a href="#" className="hover:text-[#EB1202]">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#EB1202]">
+                  Donor
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#EB1202]">
+                  Request Blood
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#EB1202]">
+                  Blood Bank
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#EB1202]">
+                  Volunteer
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -80,20 +112,23 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-10 pt-4 flex flex-col md:flex-row justify-between items-center text-sm font-Outfit">
-        <a
-          href="/"
-          className="text-[#2E2E2E] hover:text-[#EB1202] font-medium"
-        >
+        <a href="/" className="text-[#2E2E2E] hover:text-[#EB1202] text-[16px]">
           Privacy Policy
         </a>
 
-        <p className="text-center text-sm font-Outfit text-[#2E2E2E]">
-          ©2024 Nuhvin Blood Bank, All Rights Reserved
+        <p className="text-center text-sm font-Outfit lg:pt-10 text-[16px] text-[#2E2E2E]">
+          ©2024 Nuhvin Blood Bank, All Rights Reserved <br />
+          <a
+            href="https://nuhvin.com/"
+            className="text-[#EB1202] hover:text-[#EB1202] text-[20px] font-bold"
+          >
+            Powered by Nuhvin
+          </a>
         </p>
 
         <a
           href="/terms-and-conditions"
-          className="text-[#2E2E2E] hover:text-[#EB1202] font-medium"
+          className="text-[#2E2E2E] hover:text-[#EB1202] text-[16px] "
         >
           Terms and Conditions
         </a>
