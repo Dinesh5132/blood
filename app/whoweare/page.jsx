@@ -1,7 +1,7 @@
 import NBBMisstion from "@/utils/NBBMisstion";
 import NBBResponsibilities from "@/utils/NBBResponsibilities";
-import FirstSection from "@/whoweare/FirstSection";
-import LastSection from "@/whoweare/LastSection";
+import FirstSection from "@/components/whoweare/FirstSection";
+import LastSection from "@/components/whoweare/LastSection";
 import React from "react";
 
 export default function page() {
@@ -20,19 +20,19 @@ export default function page() {
         ]}
       />
 
-        <NBBResponsibilities
-      heading={{ highlight: 'NBB', rest: 'Responsibilities :' }}
-      subheading="Proactivity | Thoroughness | Consistency"
-      description="At NUHVIN BLOOD BANK, our responsibilities are paramount. We are entrusted with the vital task of saving lives by providing secure and dependable blood donation service. We prioritize meeting the urgent needs of patients by guaranteeing an ample supply of blood products, all while maintaining uncompromising standard of quality, safety, and professionalism. Through our unwavering commitment to excellence and well-being of individuals and the communities we serve."
-      principlesHeading="Our responsibility is rooted in three foundational principle:"
-      principles={[
-        "Proactivity drives our forward-thinking approach.",
-        "Thoroughness ensures meticulous attention to detail.",
-        "Consistency underpins our reliability in every action.",
-      ]}
-    />
+      <NBBResponsibilities
+        heading={{ highlight: "NBB", rest: "Responsibilities :" }}
+        subheading="Proactivity | Thoroughness | Consistency"
+        description="At NUHVIN BLOOD BANK, our responsibilities are paramount. We are entrusted with the vital task of saving lives by providing secure and dependable blood donation service. We prioritize meeting the urgent needs of patients by guaranteeing an ample supply of blood products, all while maintaining uncompromising standard of quality, safety, and professionalism. Through our unwavering commitment to excellence and well-being of individuals and the communities we serve."
+        principlesHeading="Our responsibility is rooted in three foundational principle:"
+        principles={[
+          "Proactivity drives our forward-thinking approach.",
+          "Thoroughness ensures meticulous attention to detail.",
+          "Consistency underpins our reliability in every action.",
+        ]}
+      />
 
-       <NBBMisstion
+      <NBBMisstion
         heading={{ highlight: "NBB", rest: "Transparency :" }}
         subheading="Visibility | Cardor | Reliability"
         description="At NUHVIN BLOOD BANK, transparency is foundational to our responsibilities. We believe in clear and honest communication, providing donors and patients with comprehensive information about our blood donation service. By fostering transparency, we build trust and confidence in our operations, ensuring the safety and"
