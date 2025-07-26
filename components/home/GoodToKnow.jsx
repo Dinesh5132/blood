@@ -17,7 +17,7 @@ export default function GoodToKnow() {
   ];
 
   return (
-    <div className="w-full flex  justify-evenly items-center px-4 py-10">
+    <div className="w-full flex md:flex-row flex-col gap-3 justify-evenly items-center px-4 py-10">
       <div className="bg-white  rounded p-6">
         <p className="relative inline-block text-xl font-semibold pb-2">
           Good To Know
