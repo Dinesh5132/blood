@@ -39,10 +39,10 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex w-full items-center justify-evenly font-outfit text-[15px] text-black">
-          <Link href="/" className="hover:text-red-600">
+          <Link href="/whoweare" className="hover:text-red-600">
             Who We Are
           </Link>
-          <Link href="/help" className="hover:text-red-600">
+          <Link href="/howwehelp" className="hover:text-red-600">
             How We Help
           </Link>
           <Link href="/contact" className="hover:text-red-600">
@@ -83,10 +83,16 @@ export default function Header() {
             transition={{ duration: 0.3 }}
             className="font-outfit bg-[#F9FAFB] px-6 pb-4 md:hidden text-sm space-y-3"
           >
-            <Link href="/" className="block text-black hover:text-red-600">
+            <Link
+              href="/whoweare"
+              className="block text-black hover:text-red-600"
+            >
               Who We Are
             </Link>
-            <Link href="/help" className="block text-black hover:text-red-600">
+            <Link
+              href="/howwehelp"
+              className="block text-black hover:text-red-600"
+            >
               How We Help
             </Link>
             <Link
