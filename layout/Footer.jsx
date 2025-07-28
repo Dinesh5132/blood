@@ -56,17 +56,17 @@ export default function Footer() {
             <h4 className="font-Urbanist font-bold text-red-600 mb-2">HOME</h4>
             <ul className="space-y-1 text-sm font-Outfit">
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/whoweare" className="hover:text-[#EB1202]">
                   Who We Are
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/howwehelp" className="hover:text-[#EB1202]">
                   How we help
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/contact" className="hover:text-[#EB1202]">
                   Contact
                 </a>
               </li>
@@ -76,7 +76,7 @@ export default function Footer() {
             <h4 className="font-Urbanist font-bold text-red-600 mb-2">HELP</h4>
             <ul className="space-y-1 text-sm font-Outfit">
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/contact" className="hover:text-[#EB1202]">
                   Contact Us
                 </a>
               </li>
@@ -112,7 +112,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-10 pt-4 flex flex-col md:flex-row justify-between items-center text-sm font-Outfit">
-        <a href="/" className="text-[#2E2E2E] hover:text-[#EB1202] text-[16px]">
+        <a href="/privacypolicy" className="text-[#2E2E2E] hover:text-[#EB1202] text-[16px]">
           Privacy Policy
         </a>
 
@@ -120,6 +120,7 @@ export default function Footer() {
           ©2024 Nuhvin Blood Bank, All Rights Reserved <br />
           <a
             href="https://nuhvin.com/"
+            target="_blank"
             className="text-[#EB1202] hover:text-[#EB1202] text-[20px] font-bold"
           >
             Powered by Nuhvin
@@ -127,7 +128,7 @@ export default function Footer() {
         </p>
 
         <a
-          href="/terms-and-conditions"
+          href="/termsconditions"
           className="text-[#2E2E2E] hover:text-[#EB1202] text-[16px] "
         >
           Terms and Conditions

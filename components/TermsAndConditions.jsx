@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TermsAndConditions() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:mt-24 py-10 text-[#2E2E2E]">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-16  lg:mt-24 py-10 text-[#2E2E2E]">
       <h2 className="text-xl sm:text-2xl font-Urbanist font-bold mb-4">
         <span className="text-[#EB1202]">Caution:</span> We never charge for
         blood donations. Don't pay for blood; it's a selfless act.

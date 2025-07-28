@@ -9,10 +9,10 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const Links = [
-    { label: "Donor", href: "/donor" },
-    { label: "Request Blood", href: "/request-blood" },
-    { label: "Blood Bank", href: "/blood-bank" },
-    { label: "Volunteer", href: "/volunteer" },
+    { label: "Donor", href: "/register" },
+    { label: "Request Blood", href: "/register" },
+    { label: "Blood Bank", href: "/register" },
+    { label: "Volunteer", href: "/register" },
   ];
 
   return (
