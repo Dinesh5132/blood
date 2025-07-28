@@ -34,9 +34,12 @@ export default function Header() {
 
       {/* 🔴 Navbar */}
       <div className="bg-[#F9FAFB] flex items-center justify-between px-2 md:px-10 py-1 relative h-auto md:h-[70px]">
-        <div className="flex items-center gap-4 w-[40px] h-[40px] lg:w-[195px] lg:h-[95px]">
+        <Link
+          href={"/"}
+          className="flex items-center gap-4 w-[40px] h-[40px] lg:w-[195px] lg:h-[95px]"
+        >
           <img src="images/logo.png" alt="Logo" className="w-full h-full" />
-        </div>
+        </Link>
 
         <nav className="hidden md:flex w-full items-center justify-evenly font-outfit text-[15px] text-black">
           <Link href="/whoweare" className="hover:text-red-600">

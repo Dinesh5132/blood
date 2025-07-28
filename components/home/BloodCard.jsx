@@ -1,6 +1,6 @@
 export default function BloodCard() {
   return (
-    <div className="bg-white flex gap-5 rounded-3xl shadow-lg p-6 w-full h-auto text-center">
+    <div className="bg-white flex flex-col md:flex-row  gap-5 rounded-3xl shadow-lg p-6 w-full h-auto text-center">
       <div className="">
         <img
           src="/bloodsample.png"

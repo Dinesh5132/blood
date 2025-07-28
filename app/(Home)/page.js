@@ -1,3 +1,4 @@
+import BloodAppeal from "@/components/home/BloodAppeal";
 import BloodCard from "@/components/home/BloodCard";
 import DonorCard from "@/components/home/DonorCard";
 import GoodToKnow from "@/components/home/GoodToKnow";
@@ -11,6 +12,7 @@ export default function Home() {
       <DonorCard />
       <BloodCard />
       <GoodToKnow />
+      <BloodAppeal />
     </div>
   );
 }
