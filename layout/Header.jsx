@@ -9,10 +9,10 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const Links = [
-    { label: "Donor", href: "/donor" },
-    { label: "Request Blood", href: "/request-blood" },
-    { label: "Blood Bank", href: "/blood-bank" },
-    { label: "Volunteer", href: "/volunteer" },
+    { label: "Donor", href: "/donorregistration" },
+    { label: "Request Blood", href: "/donorregistration" },
+    // { label: "Blood Bank", href: "/blood-bank" },
+    // { label: "Volunteer", href: "/volunteer" },
   ];
 
   return (
@@ -41,24 +41,33 @@ export default function Header() {
           <img src="images/logo.png" alt="Logo" className="w-full h-full" />
         </Link>
 
-        <nav className="hidden md:flex w-full items-center justify-evenly font-outfit text-[15px] text-black">
-          <Link href="/whoweare" className="hover:text-red-600">
+        <nav className="hidden md:flex w-full items-center justify-between font-outfit text-[15px] text-black px-8">
+          <Link href="/whoweare" className="hover:text-red-600 transition-colors">
             Who We Are
           </Link>
-          <Link href="/howwehelp" className="hover:text-red-600">
+          <Link href="/howwehelp" className="hover:text-red-600 transition-colors">
             How We Help
           </Link>
-          <Link href="/contact" className="hover:text-red-600">
+          <Link href="/contact" className="hover:text-red-600 transition-colors">
             Contact
+          </Link>
+          <Link href="/Funds" className="hover:text-red-600 transition-colors">
+            Funds
+          </Link>
+          <Link href="/donorregistration" className="hover:text-red-600 transition-colors">
+            Blood Bank
+          </Link>
+          <Link href="/donorregistration" className="hover:text-red-600 transition-colors">
+            Volunteers
           </Link>
         </nav>
 
-        <div className="hidden w-full md:flex justify-evenly">
+        <div className="hidden w-full md:flex justify-end space-x-13">
           {Links.map(({ label, href }, index) => (
             <Link
               key={index}
               href={href}
-              className="bg-red-600 hover:bg-red-700 text-white px-7 py-1.5 rounded font-outfit text-sm"
+              className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-md font-outfit text-sm transition-colors"
             >
               {label}
             </Link>
@@ -103,6 +112,27 @@ export default function Header() {
               className="block text-black hover:text-red-600"
             >
               Contact
+            </Link>
+
+            <Link
+              href="/Funds"
+              className="block text-black hover:text-red-600"
+            >
+               Funds
+            </Link>
+
+            <Link
+              href="/donorregistration"
+              className="block text-black hover:text-red-600"
+            >
+               Blood Bank
+            </Link>
+
+            <Link
+              href="/Volunteers"
+              className="block text-black hover:text-red-600"
+            >
+               Volunteers
             </Link>
 
             <div className="pt-3 space-y-2">
