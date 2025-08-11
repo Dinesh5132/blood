@@ -6,11 +6,11 @@ export default function DonationType() {
       <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
         <div className="lg:w-7/12 w-full space-y-4">
           <h2 className="text-xl md:text-4xl font-Urbanist font-semibold text-[#2E2E2E]">
-            The help we provide favors all those in need, including:
+            The help we provide favors all those in need, including: 
           </h2>
           <ul className="list-disc ml-5 space-y-2 font-Outfit text-[16px] text-[##2E2E2E]">
             <li className="py-2">
-              <span className="text-red-600 font-medium">Blood Donation: </span>
+              <span className="text-red-600-fontmedium">Blood Donation: </span>
               Offering essential support to patients requiring blood transfusions for diverse medical conditions.
             </li>
             <li className="py-2">

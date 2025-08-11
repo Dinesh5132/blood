@@ -65,9 +65,10 @@ export default function Footer() {
                   How we help
                 </a>
               </li>
+            
               <li>
                 <a href="#" className="hover:text-[#EB1202]">
-                  Contact
+                  Funds
                 </a>
               </li>
             </ul>
@@ -81,7 +82,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/donorregistration" className="hover:text-[#EB1202]">
                   Donor
                 </a>
               </li>
