@@ -1,9 +1,9 @@
-import React from 'react';
-import DonarBtn from '@/utils/DonarBtn';
+import React from "react";
+import DonarBtn from "@/utils/DonarBtn";
 
 export default function FirstSection() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 bg-white">
+    <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 md:pt-[100px] pt-[85px] bg-white">
       <div className="md:w-1/2 max-w-xl space-y-6">
         <h2 className="font-Urbanist text-4xl font-bold text-[#000000]">
           who we <span className="text-red-600">are</span>
@@ -12,13 +12,13 @@ export default function FirstSection() {
           Passionate about <span className="text-red-500">Protecting Life</span>
         </h3>
         <p className="font-Outfit text-gray-700 text-[15px] leading-relaxed">
-          NUHVIN BLOOD BANK is committed to protecting life. Our dedicated crew is
-          dedicated to creating each donation count by delivering critical blood
-          resources to patients in need. We agree with in the energy of community and
-          the benefits of philanthropy. Your decision to donate not only saves, but it
-          also gives hope and strength to families suffering medical emergencies. Join
-          us on our journey to make a difference and save the lives of those who need
-          it most.
+          NUHVIN BLOOD BANK is committed to protecting life. Our dedicated crew
+          is dedicated to creating each donation count by delivering critical
+          blood resources to patients in need. We agree with in the energy of
+          community and the benefits of philanthropy. Your decision to donate
+          not only saves, but it also gives hope and strength to families
+          suffering medical emergencies. Join us on our journey to make a
+          difference and save the lives of those who need it most.
         </p>
         <DonarBtn label="Become a donar" href="/" />
       </div>

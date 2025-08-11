@@ -37,7 +37,7 @@ export default function ContactForm() {
           <p className="text-red-500 mt-1">{errors?.email?.message}</p>
         )}
         <textarea
-          name="message"
+          name="desc"
           placeholder="Enter your Message"
           {...register("message", { required: "Enter you message" })}
           rows="5"
