@@ -6,7 +6,7 @@ import React from "react";
 
 export default function HoeWeHelpFirstSection() {
   return (
-    <section className="w-full mx-auto px-6 md:px-16 py-12 md:pt-[100px] pt-[85px] flex flex-col lg:flex-row items-center gap-10 rounded-lg lg:mt-10">
+    <section className="w-full mx-auto px-6 md:px-16 py-12 flex flex-col lg:flex-row items-center gap-10 rounded-lg lg:mt-10">
       <div className="w-full lg:w-1/2">
         <Image
           alt="Blood Donation Help"

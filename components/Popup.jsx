@@ -1,30 +1,45 @@
-import React from 'react';
+import React from "react";
 
-export default function DonorConfirmation() {
+export default function ConfirmationCard({
+  title,
+  highlight,
+  message,
+  imgSrc,
+  onDone,
+  className = "max-w-lg",
+}) {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white px-6 py-12">
-      {/* Text Content */}
-      <div className="text-center md:text-left md:mr-10 max-w-md">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-          You're officially <span className="text-red-600">a donor!</span>
-        </h1>
-        <p className="text-gray-500 mt-4">
-          Your willingness to donate blood can save up to 3 lives.
-          <br />
-          Let’s keep making a difference — together!
-        </p>
-        <button className="mt-6 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded">
-          Done
+    <div className="fixed inset-0 bg-black/70 bg-opacity-50 flex items-center justify-center z-50">
+      <div
+        className={`bg-white ${className} rounded-lg shadow-lg p-6 md:p-8  w-full relative animate-fadeIn`}
+      >
+        {/* Close Button */}
+        <button
+          onClick={onDone}
+          className="absolute cursor-pointer top-3 right-3 text-gray-400 hover:text-gray-600 text-xl"
+        >
+          ✕
         </button>
-      </div>
+        <div className="flex flex-col md:flex-row items-center">
+          {/* Text Content */}
+          <div className="text-center md:text-left md:mr-6 md:w-1/2 max-w-sm">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
+              {title} <span className="text-red-600">{highlight}</span>
+            </h1>
+            <p className="text-gray-500 mt-4">{message}</p>
+            <button
+              onClick={onDone}
+              className="mt-6 cursor-pointer bg-red-600 mx-auto flex justify-center items-center hover:bg-red-700 text-white font-semibold py-2 px-6 rounded shadow"
+            >
+              Done
+            </button>
+          </div>
 
-      {/* Image */}
-      <div className="mt-10 md:mt-0">
-        <img
-          src="/bloodbag.png"
-          alt="Blood Bag"
-          className="w-40 md:w-52 lg:w-60"
-        />
+          {/* Image */}
+          <div className="mt-6 md:mt-0 md:w-1/2 flex justify-center">
+            <img src={imgSrc} alt={highlight} className="max-w-full h-auto" />
+          </div>
+        </div>
       </div>
     </div>
   );

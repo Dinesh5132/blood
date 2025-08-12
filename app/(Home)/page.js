@@ -16,7 +16,6 @@ export default function Home() {
       <BloodCard />
       <GoodToKnow />
       <BloodAppeal />
-      <Signup />
     </div>
   );
 }

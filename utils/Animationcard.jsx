@@ -21,9 +21,9 @@ export default function Animationcard() {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row w-full gap-20 p-4">
+    <div className="flex flex-col md:flex-row w-full gap-8 md:gap-20 p-4">
       {cards.map((e, index) => (
-        <div className="card  w-full" key={index}>
+        <div className="card mt-2 w-full" key={index}>
           <div className="w-full object-contain">
             <img
               src={e.img}
@@ -34,7 +34,7 @@ export default function Animationcard() {
 
           <strong>{e.title}</strong>
 
-          <div className="card__body px-3">
+          <div className="card__body p-3 ">
             {e.desc.length > 100 ? e.desc.substring(0, 100) + "..." : e.desc}
           </div>
 

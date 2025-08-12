@@ -1,9 +1,10 @@
 import HeroRegistration from "@/components/Donarregisteration";
-import Imagewithchild from "@/utils/imagewithchild";
+import Imagewithchild from "@/utils/Imagewithchild";
 
-export default function page() {
+export default function Page() {
   return (
-    <Imagewithchild><HeroRegistration/></Imagewithchild>
-
+    <Imagewithchild>
+      <HeroRegistration />
+    </Imagewithchild>
   );
 }

@@ -9,15 +9,14 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const Links = [
-    { label: "Donor", href: "/donorregistration" },
-    { label: "Request Blood", href: "/donorregistration" },
+    { label: "Donor", href: "/Donarinfo" },
+    { label: "Request Blood", href: "/Bloodrequestinfo" },
     // { label: "Blood Bank", href: "/blood-bank" },
     // { label: "Volunteer", href: "/volunteer" },
   ];
 
   return (
     <header className="fixed top-0 w-full z-50 shadow-[0px_4px_16px_#0000001A]">
-      {/* 🔴 Scrolling Banner */}
       <div className="bg-[#1F1F1F] text-white text-sm flex items-center px-4 py-1 overflow-hidden relative">
         <span className="bg-red-600 z-20 text-white rounded px-3 py-1 lg:ml-10 font-semibold lg:w-[130px] text-[15px] text-center">
           Caution:
@@ -32,32 +31,46 @@ export default function Header() {
         </div>
       </div>
 
-      {/* 🔴 Navbar */}
       <div className="bg-[#F9FAFB] flex items-center justify-between px-2 md:px-10 py-1 relative h-auto md:h-[70px]">
         <Link
           href={"/"}
-          className="flex items-center gap-4 w-[40px] h-[40px] lg:w-[195px] lg:h-[95px]"
+          className="flex items-center gap-4 w-[40px] h-[40px] sm:w-[80px] sm:h-[80px] lg:w-[195px] lg:h-[95px]"
         >
           <img src="images/logo.png" alt="Logo" className="w-full h-full" />
         </Link>
 
-        <nav className="hidden md:flex w-full items-center justify-between font-outfit text-[15px] text-black px-8">
-          <Link href="/whoweare" className="hover:text-red-600 transition-colors">
+        <nav className="hidden lg:flex w-full items-center justify-between font-outfit text-[15px] text-black px-8">
+          <Link
+            href="/whoweare"
+            className="hover:text-red-600 transition-colors"
+          >
             Who We Are
           </Link>
-          <Link href="/howwehelp" className="hover:text-red-600 transition-colors">
+          <Link
+            href="/howwehelp"
+            className="hover:text-red-600 transition-colors"
+          >
             How We Help
           </Link>
-          <Link href="/contact" className="hover:text-red-600 transition-colors">
+          <Link
+            href="/contact"
+            className="hover:text-red-600 transition-colors"
+          >
             Contact
           </Link>
           <Link href="/Funds" className="hover:text-red-600 transition-colors">
             Funds
           </Link>
-          <Link href="/donorregistration" className="hover:text-red-600 transition-colors">
+          <Link
+            href="/Bloodbankregis"
+            className="hover:text-red-600 transition-colors"
+          >
             Blood Bank
           </Link>
-          <Link href="/donorregistration" className="hover:text-red-600 transition-colors">
+          <Link
+            href="/Volunteer"
+            className="hover:text-red-600 transition-colors"
+          >
             Volunteers
           </Link>
         </nav>
@@ -85,7 +98,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* 🔴 Mobile Menu with Animation */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -95,51 +107,30 @@ export default function Header() {
             transition={{ duration: 0.3 }}
             className="font-outfit bg-[#F9FAFB] px-6 pb-4 md:hidden text-sm space-y-3"
           >
-            <Link
-              href="/whoweare"
-              className="block text-black hover:text-red-600"
-            >
-              Who We Are
-            </Link>
-            <Link
-              href="/howwehelp"
-              className="block text-black hover:text-red-600"
-            >
-              How We Help
-            </Link>
-            <Link
-              href="/contact"
-              className="block text-black hover:text-red-600"
-            >
-              Contact
-            </Link>
-
-            <Link
-              href="/Funds"
-              className="block text-black hover:text-red-600"
-            >
-               Funds
-            </Link>
-
-            <Link
-              href="/donorregistration"
-              className="block text-black hover:text-red-600"
-            >
-               Blood Bank
-            </Link>
-
-            <Link
-              href="/Volunteers"
-              className="block text-black hover:text-red-600"
-            >
-               Volunteers
-            </Link>
+            {[
+              { label: "Who We Are", href: "/whoweare" },
+              { label: "How We Help", href: "/howwehelp" },
+              { label: "Contact", href: "/contact" },
+              { label: "Funds", href: "/Funds" },
+              { label: "Blood Bank", href: "/Bloodbankregis" },
+              { label: "Volunteers", href: "/Volunteer" },
+            ].map(({ label, href }, index) => (
+              <Link
+                key={index}
+                href={href}
+                onClick={() => menuOpen(false)}
+                className="block text-black hover:text-red-600"
+              >
+                {label}
+              </Link>
+            ))}
 
             <div className="pt-3 space-y-2">
               {Links.map(({ label, href }, index) => (
                 <Link
                   key={index}
                   href={href}
+                  onClick={() => menuOpen(false)}
                   className="block w-full bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-center"
                 >
                   {label}

@@ -1,26 +1,33 @@
+"use client";
+import { useRouter } from "next/navigation";
 import BloodCard from "./BloodCard";
 
 export default function BloodCardList() {
+  const router = useRouter();
   const cards = [
     {
       img: "/donor1.png",
       title: "Blood Appeal",
       desc: "Blood is a precious asset that can save lives. At NUHVIN Blood Bank, we invite you to donate blood and help save lives.",
+      href: "/Bloodrequestinfo", // example link
     },
     {
       img: "/donor2.png",
       title: "Blood Donation",
       desc: "Donating blood is a kind gesture of providing blood to people in need of transfusions for surgeries or injuries.",
+      href: "/Donarinfo",
     },
     {
       img: "/donor3.png",
       title: "Blood Bank",
       desc: "A blood bank is a vital facility that collects, preserves, and distributes donated blood for clinical use.",
+      href: "/Bloodbankregis",
     },
     {
       img: "/donor1.png",
       title: "Become a Volunteer",
       desc: "Join the dedicated team at Nuhvin Blood Bank as a volunteer and make a real difference in people’s lives.",
+      href: "/Volunteer",
     },
   ];
 
@@ -32,13 +39,14 @@ export default function BloodCardList() {
           img={card.img}
           title={card.title}
           desc={card.desc}
+          onclick={() => router.push(card?.href)}
         />
       ))}
     </div>
   );
 }
 
-function BloodCard1({ img, title, desc }) {
+function BloodCard1({ img, title, desc, onclick }) {
   return (
     <div className="bg-white  flex shadow-lg rounded-xl overflow-hidden ">
       <div className="">
@@ -49,7 +57,10 @@ function BloodCard1({ img, title, desc }) {
         <h3 className="text-xl font-bold text-[#2E2E2E] mb-2">{title}</h3>
         <p className="text-gray-700 text-sm flex-grow">{desc}</p>
 
-        <button className="mt-4 bg-red-600 hover:bg-red-700 w-fit text-white px-4 py-2 rounded text-sm">
+        <button
+          onClick={onclick}
+          className="mt-4 cursor-pointer bg-red-600 hover:bg-red-700 w-fit text-white px-4 py-2 rounded text-sm"
+        >
           Request Blood
         </button>
       </div>

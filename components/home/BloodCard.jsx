@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function BloodCard() {
   return (
     <div className="bg-white flex flex-col md:flex-row  gap-5 rounded-3xl shadow-lg p-6 w-full h-auto text-center">
@@ -21,9 +23,12 @@ export default function BloodCard() {
           emphasizing its crucial relevance for survival.
         </p>
 
-        <button className="px-5 py-2 bg-red-600  text-white rounded-lg font-medium hover:bg-red-700 transition">
+        <Link
+          href={"/Donarinfo"}
+          className="px-5 py-2 bg-red-600  text-white rounded-lg font-medium hover:bg-red-700 transition"
+        >
           Explore Now
-        </button>
+        </Link>
       </div>
     </div>
   );

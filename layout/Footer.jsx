@@ -10,6 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#F9FAFB] text-[#333] py-10 px-6 shadow-[0px_4px_16px_#0000001A]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+        {/* Left Section */}
         <div className="space-y-4">
           <img src="/images/logo.png" alt="NBB Logo" className="w-20 h-auto" />
           <p className="font-Outfit text-sm text-[#581202]">
@@ -51,23 +52,24 @@ export default function Footer() {
             </a>
           </div>
         </div>
+
+        {/* Middle Section */}
         <div className="flex justify-around gap-8">
           <div>
             <h4 className="font-Urbanist font-bold text-red-600 mb-2">HOME</h4>
             <ul className="space-y-1 text-sm font-Outfit">
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/whoweare" className="hover:text-[#EB1202]">
                   Who We Are
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
-                  How we help
+                <a href="/howwehelp" className="hover:text-[#EB1202]">
+                  How We Help
                 </a>
               </li>
-            
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/Funds" className="hover:text-[#EB1202]">
                   Funds
                 </a>
               </li>
@@ -77,7 +79,7 @@ export default function Footer() {
             <h4 className="font-Urbanist font-bold text-red-600 mb-2">HELP</h4>
             <ul className="space-y-1 text-sm font-Outfit">
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/contact" className="hover:text-[#EB1202]">
                   Contact Us
                 </a>
               </li>
@@ -87,23 +89,25 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/Bloodrequestinfo" className="hover:text-[#EB1202]">
                   Request Blood
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/Bloodbankregis" className="hover:text-[#EB1202]">
                   Blood Bank
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#EB1202]">
+                <a href="/Volunteer" className="hover:text-[#EB1202]">
                   Volunteer
                 </a>
               </li>
             </ul>
           </div>
         </div>
+
+        {/* Right Section */}
         <div className="flex justify-center md:justify-center">
           <img
             src="/images/heart.png"
@@ -112,8 +116,13 @@ export default function Footer() {
           />
         </div>
       </div>
+
+      {/* Bottom Section */}
       <div className="mt-10 pt-4 flex flex-col md:flex-row justify-between items-center text-sm font-Outfit">
-        <a href="/" className="text-[#2E2E2E] hover:text-[#EB1202] text-[16px]">
+        <a
+          href="/privacy-policy"
+          className="text-[#2E2E2E] hover:text-[#EB1202] text-[16px]"
+        >
           Privacy Policy
         </a>
 
@@ -129,7 +138,7 @@ export default function Footer() {
 
         <a
           href="/terms-and-conditions"
-          className="text-[#2E2E2E] hover:text-[#EB1202] text-[16px] "
+          className="text-[#2E2E2E] hover:text-[#EB1202] text-[16px]"
         >
           Terms and Conditions
         </a>
