@@ -1,4 +1,5 @@
 import Signup from "@/auth/Signup";
+import MovingBlood from "@/components/BloodFlowComponent";
 import BloodAppeal from "@/components/home/BloodAppeal";
 import BloodCard from "@/components/home/BloodCard";
 import DonorCard from "@/components/home/DonorCard";
@@ -15,6 +16,7 @@ export default function Home() {
       <Animationcard />
       <BloodCard />
       <GoodToKnow />
+      <MovingBlood />
       <BloodAppeal />
     </div>
   );

@@ -1,18 +1,14 @@
 "use client";
-
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion"; // ✅ Import motion
-
+import { motion, AnimatePresence } from "framer-motion";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const Links = [
     { label: "Donor", href: "/Donarinfo" },
     { label: "Request Blood", href: "/Bloodrequestinfo" },
-    // { label: "Blood Bank", href: "/blood-bank" },
-    // { label: "Volunteer", href: "/volunteer" },
   ];
 
   return (
@@ -40,39 +36,22 @@ export default function Header() {
         </Link>
 
         <nav className="hidden lg:flex w-full items-center justify-between font-outfit text-[15px] text-black px-8">
-          <Link
-            href="/whoweare"
-            className="hover:text-red-600 transition-colors"
-          >
-            Who We Are
-          </Link>
-          <Link
-            href="/howwehelp"
-            className="hover:text-red-600 transition-colors"
-          >
-            How We Help
-          </Link>
-          <Link
-            href="/contact"
-            className="hover:text-red-600 transition-colors"
-          >
-            Contact
-          </Link>
-          <Link href="/Funds" className="hover:text-red-600 transition-colors">
-            Funds
-          </Link>
-          <Link
-            href="/Bloodbankregis"
-            className="hover:text-red-600 transition-colors"
-          >
-            Blood Bank
-          </Link>
-          <Link
-            href="/Volunteer"
-            className="hover:text-red-600 transition-colors"
-          >
-            Volunteers
-          </Link>
+          {[
+            { href: "/whoweare", label: "Who We Are" },
+            { href: "/howwehelp", label: "How We Help" },
+            { href: "/contact", label: "Contact" },
+            { href: "/Funds", label: "Funds" },
+            { href: "/Bloodbankregis", label: "Blood Bank" },
+            { href: "/Volunteer", label: "Volunteers" },
+          ].map((e, i) => (
+            <Link
+              href={e.href}
+              key={i}
+              className="hover:text-red-600 transition-colors"
+            >
+              {e.label}
+            </Link>
+          ))}
         </nav>
 
         <div className="hidden w-full md:flex justify-end space-x-13">
