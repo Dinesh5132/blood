@@ -30,6 +30,7 @@ export default function Header() {
       <div className="bg-[#F9FAFB] flex items-center justify-between px-2 md:px-10 py-1 relative h-auto md:h-[70px]">
         <Link
           href={"/"}
+          onClick={() => menuOpen(false)}
           className="flex items-center gap-4 w-[40px] h-[40px] sm:w-[80px] sm:h-[80px] lg:w-[195px] lg:h-[95px]"
         >
           <img src="images/logo.png" alt="Logo" className="w-full h-full" />

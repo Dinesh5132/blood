@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 const PartnerSection = () => {
@@ -8,8 +9,8 @@ const PartnerSection = () => {
 
       {/* Description */}
       <p className="text-gray-600 max-w-xl mx-auto mb-6">
-        Looking for CSR collaborations or institutional funding? We welcome partnerships from companies,
-        hospitals, NGOs, and communities.
+        Looking for CSR collaborations or institutional funding? We welcome
+        partnerships from companies, hospitals, NGOs, and communities.
       </p>
 
       {/* Button */}

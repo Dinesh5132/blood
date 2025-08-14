@@ -1,8 +1,6 @@
-import { API } from "@/url/url";
+"use client";
 import { formSchema } from "@/validations/Formvalidations";
-
 import { zodResolver } from "@hookform/resolvers/zod";
-import React from "react";
 import { useForm } from "react-hook-form";
 
 export default function UseFormHook() {
@@ -10,14 +8,13 @@ export default function UseFormHook() {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({ resolver: zodResolver(formSchema) });
-  const onSubmit = async (data) => {
-    try {
-      const response = await API.post("/contact/", data);
-      console.log(response.data);
-    } catch (error) {
-      console.log(error);
-    }
+
+  const onSubmit = (data) => {
+    console.log("Success:", data);
+    alert("Your message has been sent!");
+    reset();
   };
 
   return {
